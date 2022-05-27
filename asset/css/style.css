@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Raleway&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald',sans-serif;
+}
+p{
+    font-family: 'Oswald',sans-serif; 
+}
+/*Start of header Area*/
+.nav{
+    overflow: auto;
+    width: 85%;
+    margin: 1em auto;
+}
+.nav h1{
+    text-transform: uppercase;
+    width: 50%;
+    float: left;
+}
+.nav h1 a{
+    font-family: 'Oswald', sans-serif;
+    color: #96746b;
+    text-decoration: none;
+}
+.nav ul{
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding: 1em;
+}
+.nav li{
+    display: inline-block;
+    margin-left: 1em;
+}
+.nav ul a{
+    font-family: 'Oswald',sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    color: #96746b;
+}
+
+.banner{
+    background-image: url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 670px;
+
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 7.5px;
+    transform: translateY(-50%);
+    width: 45%;
+}
+.banner-text h2{
+    color: #c7a17a;
+    font-size: 4em;
+    text-transform: uppercase;
+    margin-left: 1em;
+}
+.banner-text span{
+    color: #96746b;
+}
+.banner-text p{
+    color: white;
+    margin-left: 4em;
+}
+.banner a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    background-color: #312a26;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-left: 4em; /*バナー内位置*/
+    width: 120px;
+}
+.banner a:hover{
+    background-color: goldenrod;
+    color: #312a26;
+}
+.ads{
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+} 
+.ads-item{
+    width: 48.5%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 5%;
+    position: relative;
+}
+.ads-item1 {
+    margin-right: 3%;
+    background-image: url(../images/ads-img1.jpg);
+}
+.ads-item2 {
+    background-image: url(../images/ads-img2.jpg);
+}
+.ads-text{
+    position: absolute;
+    top: 30%; /*tex位置ー画像上から*/
+    left: 10%;
+    transform: rotateY(-50%);
+    width: 40px;
+}
+.ads-text h2{
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+.ads-text a{
+    /*text-decoration: none;*/
+    color: #fff;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 1em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+.merch{
+    width: 85%;
+    margin: 5em auto;
+}
+.section-header{
+    text-align: center;
+}
+.section-header span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #96746b;
+}
+.section-header h2{
+    text-transform: uppercase;
+    color: #96746b;
+}
+.section-header hr{
+    background-color: salmon;
+    height: 2px;
+    width: 40%;
+    margin: auto;
+}
+.merch-gallery{
+    margin-top: 2em;
+    overflow: auto;
+}
+.merch-items {
+    width: 24.25%; /*商品画像の幅*/
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+.merch-items:nth-child(4),
+.merch-items:nth-child(8){
+    margin-right: 0;
+}
+.merch-items img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/*Start of Discount page*/
+.discount {
+    width: 85%;
+    margin: 2em auto;
+    background-image: url(../images/discount-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+}
+.discount-text {
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 25%; /*text位置調整*/
+    transform: translate(-50% -50%);
+}
+.discount-text span {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 3px 3px 6px #312a26;
+}
+.discount-text h3 {
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+}
+.discount-text a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    background-color: bisque;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+.discount-text a:hover {
+    background-color: orange;
+}
+/*End of Discount page*/
+/*Start of Merchandise Sale*/
+.section-header-sale{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.section-header-sale span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #96746b;
+}
+.section-header-sale h2{
+    text-transform: uppercase;
+    color: #96746b;
+}
+.section-header-sale hr{
+    background-color: salmon;
+    height: 2px;
+    width: 40%;
+    margin: auto;
+}
+ /*End of Merchandise Sale*/
+/*Start of 2nd ads area*/
+.ads-item3 {
+    margin-right: 3%;
+    background-image: url(../images/ads-img3.jpg);
+}
+.ads-item4 {
+    background-image: url(../images/ads-img4.jpg);
+}
+.ads-item5 {
+    margin-right: 3%;
+    background-image: url(../images/ads-img5.jpg);
+}
+.ads-item6 {
+    background-image: url(../images/ads-img6.jpg);
+}
+.ads-item h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 4em;
+    margin-left: 10%;
+}
+.ads-item a{
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 10%;
+}
+.ads-item a:hover {
+    background-color: #312a26;
+    color: #fff;
+    border: 2px solid #fff;
+}
+/*End of 2nd ads area*/
+/*Start of Reservation form*/
+.reservation{
+    width: 85%;
+    margin: 1em auto;
+}
+form {
+    overflow: auto;
+}
+.form-group{
+    margin-top: 1em;
+    background-color: #f2f2f2;
+    float: left;
+    width: 49.5%;
+    border-radius: 5px;
+    padding: 1em;
+    height: 670px;
+}
+.form-group:nth-child(1){
+    margin: .5%;
+}
+form label,
+form input,
+form select,
+form textarea{
+    display: inline-block;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+form label{
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: .5em;
+}
+.res-time{
+    text-align: center;
+}
+.res-time *{
+    width: auto;
+}
+form p{
+    margin: 1em;
+    text-align: center;
+    font-weight: 700;
+}
+form h3{
+    text-align: center;
+}
+form h3::after{
+    content: "";
+    background-image: url(../images/reservation-cards.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+.res-agreement *{
+    width: auto;
+}
+form input[type="submit"]{
+    background-color: #96746b;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.submit_btn:hover{
+    background-color: goldenrod;
+    color: white;
+}
+/*End of Reservation form*/
+/*Start of footer area*/
+.footer{
+    background-image: url(../images/footer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 2em;
+    padding-bottom: 0;
+}
+.footer-contents{
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+}
+.footer-widgets{
+    width: 24.25%;
+    float: left;
+    margin-right: 1%; 
+}
+.footer-widgets:nth-child(4){
+    margin-right: 0;
+}
+.footer-widgets h3{
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-shadow: 3px 3px 6px #f2f2f2;
+}
+.footer-widgets h4{
+    color: #fff;
+}
+.footer-widgets p{
+    color: #c7a17a;
+}
+.footer-widgets th, td{
+    color: #fff;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px #f2f2f2;
+}
+.footer-form *{
+    width: auto;
+}
+.footer-social{
+    color: #fff;
+    background-color: #312a26; 
+    overflow: auto;
+    padding: 1em 7.5%;
+}
+.social-widget{
+    width: 32.66%;
+    float: left;
+    text-align: center; 
+}
+.social-widget h3{
+    top: 1em;
+    text-transform: uppercase;
+}
+.social-widget img{
+    width: 1.5em;
+}
